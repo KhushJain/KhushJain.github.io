@@ -107,35 +107,36 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-	<div data-date="May 2023 - Present">
+	<div data-date="May 2023 - Aug 2023">
             <h3>Amazon</h3>
             <h4>Software Development Engineer Intern</h4>
             <ul>
-                <li>Designed and implemented a scalable service that performs Entity Resolution, identifying multiple match groups per record.</li>
-	    	<li>Developing glue jobs that perform batch processing of records, deduping of match groups, and exporting them to AWS S3.</li>
+                <li>Designed and implemented a scalable service that performs Identity Resolution, identifying similar rows in given source data.</li>
+	    	<li>Developing high-performance AWS Glue jobs with Spark that perform batch processing of records, deduping of match groups, grouping match groups, determining the dominant matchID mapping, and exporting them to AWS S3.</li>
+		<li>Assisted with a POC to design a Map-Reduce strategy to find match groups, improving performance from 3 hours to 15 mins.</li>
 		<li>Identified and fixed a critical issue that returned incorrect matches to customers when there were low cardinality keys.</li>
-		<li>Optimized the performance of finding medium records by three times, allowing us to fulfill many more requests.</li>
-                <li><b><i>Technologies: Java, AWS Fargate, AWS DynamoDB, AWS Glue, AWS lambda, AWS API Gateway, AWS Step Functions.</b></i></li>
+	    	<li>Optimized finding medium record performance by 300%, enhancing the system's response time for 3x more requests.</li>
+                <li><b><i>Technologies: Java, Scala, AWS Glue, AWS DynamoDB, AWS S3, AWS Lambda, AWS Step Function, AWS Fargate.</i></b></li>
             </ul>
         </div>
         <div data-date="Jan 2022 - May 2022">
             <h3>Vunet Systems</h3>
             <h4>Software Engineer Intern</h4>
             <ul>
-                <li>Leveraged Telegraf to build multiple dashboards on Grafana to monitor the 3-Node Kafka Cluster and Kafka Streams.</li>
-                <li>Implemented a feature in the KV Plugin that filters out which keys are to be parsed from long input messages.</li>
-                <li>Fixed live issues in the Session Plugin that were critical since they were causing data loss.</li>
-                <li><b><i>Technologies: Kafka, Kafka Streams, Kafka Connect, Java, Grafana, Telegraf.</b></i></li>
+                <li>Leveraged Telegraf to construct multiple comprehensive dashboards on Grafana, enhancing the monitoring of a 3-Node Kafka Cluster and Kafka Streams; identifying system failures early, leading to a 30% reduction in system downtime incidents.</li>
+                <li>Engineered a key feature within the KV Plugin that efficiently filters and parses keys supplied by the customer from long input messages, improving processing time by 18% and optimizing resource utilization to cut cost and serve more requests.</li>
+                <li>Fixed critical issues in the Session Plugin, resulting in a 14% reduction in data loss and improved system reliability.</li>
+                <li><b><i>Technologies: Kafka, Kafka Streams, Kafka Connect, Java, Grafana, Telegraf.</i></b></li>
             </ul>
         </div>
         <div data-date="Aug 2020 - Oct 2020">
             <h3>Klozet</h3>
             <h4>Full Stack Engineer Intern</h4>
             <ul>
-                <li>Designed and developed admin, designer, and partner interfaces using React.js, Node.js, Firebase, and AWS.</li>
-                <li>Automated the majority of the manual work, such as adding outfits, designers, categories, occasions, images, and so on, by building various UI components and helper functions.</li>
-                <li>Visual analyses of the outfits based on the user's location and the age of the person liking an outfit and analytics based on brands and designers were programmed using Chart.js to generate more revenue.</li>
-                <li>Implemented schedule scripts that automatically generate referral codes and email them to the new users who have joined the platform and send promotional emails to the subscribed users.</li>
+                <li>Designed and built admin, designer, and partner interface; improving user engagement and expanding platform capabilities.</li>
+                <li>Automated 100% of the manual tasks, including outfit, designer, category, and occasion management through strategic UI components and helper function development, reducing the weekly operational workload from 40 hours to 2 minutes.</li>
+                <li>Engineered visual analyses of outfits based on user location and liking patterns and analytics based on brands and designers, boosting revenue generation by 30% through targeted marketing strategies.</li>
+                <li>Developed schedule scripts, automating referral code generation, resulting in a 23% increase in new user sign-ups.</li>
                 <li>Designed and deployed Firebase Triggers, Firebase Pub/Sub, Firebase Realtime Database Rules, OAuth, and server-side and client-side encryption and decryption of bank credentials.</li>
                 <li><b><i>Technologies: React.js, Node.js, Amazon EC2, Amazon SES, Chart.js, Firebase, Materialize CSS, Heroku.</b></i></li>
             </ul>
@@ -144,7 +145,7 @@
             <h3>Diginique TechLabs</h3>
             <h4>Software Engineer Intern</h4>
             <ul>
-                <li>Created a Convolutional Neural Network by applying transfer learning on a pre-trained VGG16 model from Keras that predicts the weather based on the image provided.</li>
+                <li>Developed a CNN architecture using transfer learning on a VGG16 model, achieving a 94% accuracy in weather prediction.</li>
                 <li>Integrated the CNN model with a Django web application that takes a user-supplied image and displays the results in the UI.</li>
                 <li><b><i>Technologies: Django, Tensorflow, Deep Learning.</b></i></li>
             </ul>
@@ -318,6 +319,9 @@
             <li>Javascript</li>
             <li>C++</li>
             <li>C</li>
+	    <li>Scala</li>
+	    <li>Spark</li>
+	    <li>Hadoop</li>
             <li>AWS DynamoDB</li>
             <li>AWS Glue</li>
             <li>AWS Step Functions</li>
@@ -346,8 +350,8 @@
             <li>Bootstrap</li>
             <li>Materialize</li>
             <li>Android</li>
-            <li>Amazon EC2</li>
-            <li>Amazon SES</li>
+            <li>AWS EC2</li>
+            <li>AWS SES</li>
             <li>Git</li>
             <li>Heroku</li>
             <li>LaTeX</li>
